@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29920.165
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConvertToAgora.Convert", "ConvertToAgora\ConvertToAgora.Convert.csproj", "{4D7AF23C-6937-40D1-B6EF-DF293BFA4CEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConvertToAgora.Tests", "ConvertToAgora.Tests\ConvertToAgora.Tests.csproj", "{64A929D7-8738-4325-AC7F-7776CB9825EA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{4D7AF23C-6937-40D1-B6EF-DF293BFA4CEF} = {4D7AF23C-6937-40D1-B6EF-DF293BFA4CEF}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D7AF23C-6937-40D1-B6EF-DF293BFA4CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D7AF23C-6937-40D1-B6EF-DF293BFA4CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D7AF23C-6937-40D1-B6EF-DF293BFA4CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D7AF23C-6937-40D1-B6EF-DF293BFA4CEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64A929D7-8738-4325-AC7F-7776CB9825EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64A929D7-8738-4325-AC7F-7776CB9825EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64A929D7-8738-4325-AC7F-7776CB9825EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64A929D7-8738-4325-AC7F-7776CB9825EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AA95FA6-C18A-47D7-8E83-9C675762A9A4}
+	EndGlobalSection
+EndGlobal
