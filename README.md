@@ -94,9 +94,9 @@ Starting test execution, please wait...
 A total of 1 test files matched the specified pattern.
 
 Test Run Successful.
-Total tests: 1
-     Passed: 1
- Total time: 1,7630 Seconds
+Total tests: 6
+     Passed: 6
+ Total time: 1,0491 Seconds
 ```
 
 ### Usage
