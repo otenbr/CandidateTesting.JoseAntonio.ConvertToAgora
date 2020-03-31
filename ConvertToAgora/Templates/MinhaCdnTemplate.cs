@@ -51,7 +51,7 @@ namespace CandidateTesting.JoseAntonio.ConvertToAgora.Templates
             yield return StatusCode;
             yield return CacheStatus;
             yield return $"\"{Header}\"";
-            yield return TimeTaken;
+            yield return TimeTaken.ToString(new CultureInfo("en-US"));
         }
 
         /// <summary>

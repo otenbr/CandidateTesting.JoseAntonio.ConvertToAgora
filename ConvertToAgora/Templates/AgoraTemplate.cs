@@ -19,12 +19,13 @@ namespace CandidateTesting.JoseAntonio.ConvertToAgora.Templates
         /// <summary>
         /// Default constructor
         /// </summary>
-        /// <param name="responseSize">Response size</param>
-        /// <param name="responseSize">Response size</param>
+        /// <param name="provider">Provider name</param>
+        /// <param name="httpMethod">HTTP method</param>
         /// <param name="statusCode">HTTP status code</param>
-        /// <param name="cacheStatus">Status of cache</param>
-        /// <param name="header">Header. Contains: HTTP Method, Path, Protocol </param>
+        /// <param name="uriPath">URI path</param>
         /// <param name="timeTaken">Time taken by the request</param>
+        /// <param name="responseSize">Response size</param>
+        /// <param name="cacheStatus">Status of cache</param>
         public AgoraTemplate(string provider, string httpMethod, int statusCode, string uriPath, int timeTaken, int responseSize, string cacheStatus)
         {
             Provider = provider;
@@ -84,7 +85,7 @@ namespace CandidateTesting.JoseAntonio.ConvertToAgora.Templates
             {
                 fields = line.Split("\t");
 
-                provider = fields[0];
+                provider = fields[0].Replace("\"", "");
                 httpMethod = fields[1];
                 statusCode = Convert.ToInt32(fields[2]);
                 uriPath = fields[3];
